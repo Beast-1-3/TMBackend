@@ -18,7 +18,7 @@ mongoose.connect(mongoUrl, err => {
   console.log("Mongodb connected...");
 });
 
-app.use("/api/auth", authRoutes); 
+app.use("/auth", authRoutes); 
 app.use("/api/tasks", taskRoutes);
 app.use("/api/profile", profileRoutes);
 

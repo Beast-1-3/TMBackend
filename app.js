@@ -19,8 +19,8 @@ mongoose.connect(mongoUrl, err => {
 });
 
 app.use("/auth", authRoutes); 
-app.use("/api/tasks", taskRoutes);
-app.use("/api/profile", profileRoutes);
+app.use("/tasks", taskRoutes);
+app.use("/profile", profileRoutes);
 
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static(path.resolve(__dirname, "../frontend/build")));
